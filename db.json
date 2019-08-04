@@ -1,0 +1,22 @@
+{
+  "tacos": [
+    {
+      "id": 1,
+      "title": "Chicken Taco",
+      "img": "https://source.unsplash.com/s6SOj6uYjXI/300x300",
+      "credit": "Photo by Miguel Andrade on Unsplash"
+    },
+    {
+      "id": 2,
+      "title": "Steak and Cilantro",
+      "img": "https://source.unsplash.com/JiRSy0GfqPA/300x300",
+      "credit": "Photo by Tai's Captures on Unsplash"
+    },
+    {
+      "id": 3,
+      "title": "Steak and Avocado",
+      "img": "https://source.unsplash.com/vzX2rgUbQXM/300x300",
+      "credit": "Photo by Christine Siracusa on Unsplash"
+    }
+  ]
+}
