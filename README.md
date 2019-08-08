@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Practical TDD for React
 
-## Available Scripts
+Practical TDD for React is a workshop focused on teaching a _practical_ approach to TDD. We're going to spend a lot of time looking at tools, techniques, and tradeoffs that I believe will make TDD much more realistic for you to start practicing in your day-to-day work and consequently, make your job much more productive and enjoyable. If you already practice TDD, then I believe this workshop will offer some new perspective for you on how to make your TDD workflow more productive.
 
-In the project directory, you can run:
+Please make sure that you're able to run the app and tests successfully before the workshop. This will allow us to spend as much time as possible on the good stuff. :pizza: Also, I highly recommend working through the [Resources](#Resources) :nerd_face: in this README prior to the workshop. It will make the workshop much more productive for you if you come in with least a base level familiarity with the tools and techniques we're going to be using. I look forward to seeing you there! :fireworks:
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Please make sure you have the following installed before beginning:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Node 10.16.x / npm 6.9.x. I highly recommend using [nvm](https://github.com/nvm-sh/nvm) to manager your Node versions.
+- [yarn](https://yarnpkg.com/en/) 1.17.x
+- [git](https://git-scm.com/): 2.22.x (a different version of git should work fine, but try installing this version if you run into issues).
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repo.
+2. Install the dependencies: `yarn`.
+3. Run the tests: `yarn test`.
+4. Run the app: `yarn start`.
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please see the [docs](https://facebook.github.io/create-react-app/docs) for info on anything related to create-react-app.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Resources
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Cypress is an awesome tool for writing flexible E2E and integration tests. If you don't know what E2E and integration tests are, don't worry. We'll go over them in the workshop. Getting familiar with Cypress would still be a great idea though. You can check out the docs [here](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+React Testing Library is a library developed by Kent Dodds. It's focus is on providing tools to make your React component tests act more like a user. General intro [here](https://testing-library.com/docs/intro) and React Testing Library intro [here](https://testing-library.com/docs/react-testing-library/intro).
