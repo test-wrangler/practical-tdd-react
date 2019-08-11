@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Steak and Cilantro",
+    "imgSrc": "/assets/images/steak-and-cilantro.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Shrimp",
+    "imgSrc": "/assets/images/shrimp.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Brisket",
+    "imgSrc": "/assets/images/brisket.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Chicken and Bacon",
+    "imgSrc": "/assets/images/chicken-and-bacon.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Breaded Chicken",
+    "imgSrc": "/assets/images/breaded-chicken.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Pork",
+    "imgSrc": "/assets/images/pork.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Taco Salad",
+    "imgSrc": "/assets/images/taco-salad.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Veggie",
+    "imgSrc": "/assets/images/veggie.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Hot Dog",
+    "imgSrc": "/assets/images/hot-dog.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Dessert",
+    "imgSrc": "/assets/images/dessert.jpg"
+  }
+]
