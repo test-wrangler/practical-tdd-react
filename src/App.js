@@ -36,11 +36,17 @@ function App() {
           </Typography>
         </Toolbar>
       </AppBar>
+      <Typography>GIMME TACOS</Typography>
       <Button
         className={classes.button}
         variant="contained"
         color="primary"
-        onClick={() => fetchTacos().then(setTacos)}
+        onClick={() =>
+          fetchTacos().then(tacos => {
+            debugger
+            setTacos(tacos)
+          })
+        }
         fullWidth={true}
       >
         GIMME TACOS
@@ -57,6 +63,6 @@ function App() {
   )
 }
 
-const fetchTacos = () => Promise.resolve(tacosJSON)
+const fetchTacos = () => Promise.resolve(tacosJSON.foo || [])
 
 export default App
