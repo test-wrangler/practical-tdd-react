@@ -36,6 +36,8 @@ function App() {
           </Typography>
         </Toolbar>
       </AppBar>
+      <Typography>GIMME TACOS</Typography>
+      <Typography>Steak and Cilantro</Typography>
       <Button
         className={classes.button}
         variant="contained"
