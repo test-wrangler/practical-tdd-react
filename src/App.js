@@ -1,4 +1,5 @@
 import React from "react"
+import _ from "lodash"
 import { makeStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
@@ -12,11 +13,13 @@ import Drawer from "@material-ui/core/Drawer"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemAvatar from "@material-ui/core/ListItemAvatar"
+import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction"
 import Avatar from "@material-ui/core/Avatar"
 import ListItemText from "@material-ui/core/ListItemText"
 import Badge from "@material-ui/core/Badge"
 import AddIcon from "@material-ui/icons/Add"
 import CartIcon from "@material-ui/icons/ShoppingCart"
+import DeleteIcon from "@material-ui/icons/Delete"
 
 import tacosJSON from "./tacos"
 
@@ -41,7 +44,17 @@ function App() {
   const [tacos, setTacos] = React.useState([])
   const [cart, setCart] = React.useState([])
   const addToCart = item => setCart([...cart, item])
+  if (window.Cypress) {
+    window.addTacoToCart = addToCart
+  }
+  const removeFromCart = item => {
+    const updatedItems = _.reject(cart, { id: item.id })
+    setCart(updatedItems)
+  }
   const [isOpen, setIsOpen] = React.useState(false)
+  if (window.Cypress) {
+    window.openCart = () => setIsOpen(true)
+  }
 
   return (
     <div className={classes.root}>
@@ -77,6 +90,15 @@ function App() {
                   <Avatar alt={`Picture of ${item.title}`} src={item.imgSrc} />
                 </ListItemAvatar>
                 <ListItemText data-cy="cart.item.name" primary={item.title} />
+                <ListItemSecondaryAction data-cy="cart.item.delete">
+                  <IconButton
+                    edge="end"
+                    aria-label="delete"
+                    onClick={() => removeFromCart(item)}
+                  >
+                    <DeleteIcon />
+                  </IconButton>
+                </ListItemSecondaryAction>
               </ListItem>
             ))}
           </List>

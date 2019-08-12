@@ -24,6 +24,18 @@ const getCartItems = () => cy.get({ dataCy: "cart.item" })
 
 const getCartItemName = () => cy.get({ dataCy: "cart.item.name" })
 
+const getCartItemRemoveButton = () => cy.get({ dataCy: "cart.item.delete" })
+
+const addTacoToCart = tacos =>
+  cy.window().then(win => {
+    win.addTacoToCart(tacos)
+  })
+
+const openCart = () =>
+  cy.window().then(win => {
+    win.openCart()
+  })
+
 export default {
   getGimmeTacos,
   getTacoByName,
@@ -32,5 +44,8 @@ export default {
   getCartButtonCount,
   getCart,
   getCartItems,
-  getCartItemName
+  getCartItemName,
+  addTacoToCart,
+  openCart,
+  getCartItemRemoveButton
 }
