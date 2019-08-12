@@ -7,12 +7,17 @@ import Button from "@material-ui/core/Button"
 import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
 import GridListTileBar from "@material-ui/core/GridListTileBar"
+import IconButton from "@material-ui/core/IconButton"
+import AddIcon from "@material-ui/icons/Add"
 
 import tacosJSON from "./tacos"
 
 const useStyles = makeStyles(theme => ({
   button: {
     margin: 20
+  },
+  icon: {
+    color: "rgba(255, 255, 255, 0.54)"
   },
   root: {
     display: "flex",
@@ -50,9 +55,21 @@ function App() {
       </Button>
       <GridList cellHeight={300} cols={3}>
         {tacos.map(taco => (
-          <GridListTile key={taco.imgSrc}>
+          <GridListTile data-cy="taco" key={taco.imgSrc}>
             <img src={taco.imgSrc} alt={taco.title} />
-            <GridListTileBar data-cy="tacoName" title={taco.title} />
+            <GridListTileBar
+              data-cy="taco.name"
+              title={taco.title}
+              actionIcon={
+                <IconButton
+                  aria-label={`info about ${taco.title}`}
+                  className={classes.icon}
+                  data-cy="taco.plusButton"
+                >
+                  <AddIcon />
+                </IconButton>
+              }
+            />
           </GridListTile>
         ))}
       </GridList>
