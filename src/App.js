@@ -44,6 +44,7 @@ function App() {
         color="primary"
         onClick={() => fetchTacos().then(setTacos)}
         fullWidth={true}
+        data-cy="gimmeTacos"
       >
         GIMME TACOS
       </Button>
@@ -51,7 +52,7 @@ function App() {
         {tacos.map(taco => (
           <GridListTile key={taco.imgSrc}>
             <img src={taco.imgSrc} alt={taco.title} />
-            <GridListTileBar title={taco.title} />
+            <GridListTileBar data-cy="tacoName" title={taco.title} />
           </GridListTile>
         ))}
       </GridList>

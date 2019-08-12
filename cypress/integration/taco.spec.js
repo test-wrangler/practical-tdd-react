@@ -1,7 +1,7 @@
 describe("Ordering tacos", () => {
   it("allows the user to order tacos", () => {
     cy.visit("http://localhost:3000")
-    cy.contains("GIMME TACOS").click()
-    cy.contains("Steak and Cilantro")
+    cy.get('[data-cy="gimmeTacos"]').click()
+    cy.get('[data-cy="tacoName"]:contains("Steak and Cilantro")')
   })
 })
