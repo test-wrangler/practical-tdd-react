@@ -35,6 +35,27 @@ Cypress is an awesome tool for writing flexible E2E and integration tests. If yo
 
 React Testing Library is a library developed by Kent Dodds. It's focus is on providing tools to make your React component tests act more like a user. General intro [here](https://testing-library.com/docs/intro) and React Testing Library intro [here](https://testing-library.com/docs/react-testing-library/intro). Egghead.io again has a [great course](https://egghead.io/lessons/react-confidently-ship-production-react-apps) for this as well.
 
+You can start the local development server, wait for port 3000 to respond and open Cypress with a single command thanks to [start-server-and-test](https://github.com/bahmutov/start-server-and-test)
+
+```shell
+npm run dev
+```
+
+Source code for the application is instrumented using [@cypress/instrument-cra](https://github.com/cypress-io/instrument-cra), and code coverage reports from the end-to-end tests are saved using [@cypress/code-coverage](https://github.com/cypress-io/code-coverage) plugin. After running Cypress tests open the HTML report.
+
+```shell
+open coverage/lcov-report/index.html
+```
+
+You can also store HTML and other reports from the `coverage` folder as static test artifacts on CircleCI using `store_artifacts` command.
+
+```
+- store_artifacts:
+    path: coverage
+```
+
+For more details, see [Cypress code coverage guide](https://on.cypress.io/code-coverage)
+
 ## Project Structure
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please see the [docs](https://facebook.github.io/create-react-app/docs) for info on anything related to create-react-app.
