@@ -7,11 +7,10 @@ Practical TDD for React is a workshop focused on teaching a _practical_ approach
 Please complete the items on the list below before the workshop. This will allow us to spend as much time as possible on the good stuff. :pizza: Also, I highly recommend working through the [Resources](#Resources) in this README prior to the workshop. The workshop will be more productive for you if you have at least a base level familiarity with the tools that we're using. Please reach out to me at don@testwrangler.io or open an issue on this repo if you run into any problems or have any feedback. I look forward to seeing you at the workshop! :fireworks:
 
 1. Install all of the [Dependencies](#dependencies)
-2. [Fork](https://guides.github.com/activities/forking/) the repo.
-3. [Clone](https://help.github.com/en/articles/cloning-a-repository) the repo locally.
-4. Complete the [Getting Started](#getting-started) section.
-5. (Optional, but recommended) [Sign up for an account on CircleCI](https://circleci.com/).
-6. (Optional, but recommended) [Setup your forked repo on CircleCI](https://circleci.com/docs/2.0/getting-started/).
+2. [Clone](https://help.github.com/en/articles/cloning-a-repository) the repo locally.
+3. Complete the [Getting Started](#getting-started) section.
+4. (Optional, but recommended) [Sign up for an account on CircleCI](https://circleci.com/).
+5. (Optional, but recommended) [Setup your forked repo on CircleCI](https://circleci.com/docs/2.0/getting-started/).
 
 ## Dependencies
 
